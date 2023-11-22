@@ -112,6 +112,12 @@ const sidebars = {
       ]
     },
     {
+      type: 'html',
+      className: 'sidebar-title',
+      value: 'Featured Games',
+      defaultStyle: true,
+    },
+    {
       type: "category",
       label: "Minecraft",
       items: [

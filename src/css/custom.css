@@ -105,3 +105,11 @@ p {
 .sidebarSpacer {
   padding-top: 10px;
 }
+
+.sidebar-title {
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--ifm-color-gray-600);
+}
