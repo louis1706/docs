@@ -101,3 +101,7 @@ p {
   border-radius: 0;
   transition: background var(--ifm-transition-fast) var(--ifm-transition-timing-default)
 }
+
+.sidebarSpacer {
+  padding-top: 10px;
+}
