@@ -172,7 +172,6 @@ const sidebars = {
     {
       type: "category",
       label: "FiveM",
-      className: "sidebarSpacer",
       items: [
         "fivem-dashboard",
         "fivem-upvotes",
@@ -286,7 +285,6 @@ const sidebars = {
     {
       type: "category",
       label: "RageMP",
-      className: "sidebarSpacer",
       items: [
         "ragemp-installpackages"
       ],
