@@ -90,8 +90,19 @@ const sidebars = {
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   gameserverSidebar: [
     {
+      type: 'html',
+      className: 'sidebar-title',
+      value: (() => {
+        switch (process.env.DOCUSAURUS_CURRENT_LOCALE) {
+          case "de": return "Allgemein";
+          default: return "General";
+        }
+      })(),
+      defaultStyle: true,
+    },
+    {
       type: 'category',
-      label: 'General',
+      label: 'First Steps',
       items: [
         "gameserver-resourcelimit",
         "gameserver-gameswitch",
@@ -114,7 +125,206 @@ const sidebars = {
     {
       type: 'html',
       className: 'sidebar-title',
-      value: 'Featured Games',
+      value: 'Popular Games',
+      defaultStyle: true,
+    },
+    {
+      type: "category",
+      label: "FiveM",
+      items: [
+        "fivem-dashboard",
+        "fivem-upvotes",
+        {
+          type: "category",
+          label: "Configuration & Administration",
+          items: [
+            "fivem-change-servericon",
+            "fivem-server-customisation",
+            "fivem-rcon",
+            "fivem-licensekey",
+            "fivem-deletecache",
+            "fivem-useprofiler",
+            "fivem-mastodon",
+            "fivem-prohibited-resources",
+            "fivem-notlisted",
+            "fivem-devtools",
+            "fivem-gamebuild",
+            "fivem-gamechange",
+            "fivem-steam-web-api-key",
+            "fivem-whitelist",
+            "fivem-locale"
+          ]
+        },
+        {
+          type: "category",
+          label: "Resources & Mods",
+          items: [
+            "fivem-installresources",
+            "fivem-sql-file-import",
+            "fivem-mods-installreplace",
+            "fivem-mods-installaddon",
+            "fivem-changeloadingscreen",
+            "fivem-installels",
+            "fivem-installeup"
+          ]
+        },
+        {
+          type: "category",
+          label: "ESX",
+          items: [
+            "fivem-esx-disableinventory",
+            "fivem-esx-changemoneyicon",
+            "fivem-esx-becomeadminoverdatabase",
+            "fivem-esx-disablehud",
+            "fivem-esx-addcarstoshop",
+            "fivem-esx-changejobgarages",
+            "fivem-esx-changerespawnpoint",
+            "fivem-editlocalfiles"
+          ]
+        },
+        {
+          type: "category",
+          label: "Dunko VRP",
+          items: [
+            "fivem-vrp-changemoneyicon",
+            "fivem-vrp-removespeedo"
+          ]
+        },
+        {
+          type: "category",
+          label: "txAdmin",
+          items: [
+            "fivem-txadmin-setup",
+            "fivem-txadmin-features"
+          ]
+        },
+        {
+          type: "category",
+          label: "QBCore",
+          items: [
+            "fivem-qbcore-admin"
+          ]
+        }
+      ],
+    },
+    {
+      type: "category",
+      label: "Minecraft",
+      items: [
+        {
+          type: "category",
+          label: "First Steps",
+          items: [
+            "minecraft-firststeps-connect",
+            "minecraft-firststeps-java-bedrock-comparison"
+          ]
+        },
+        {
+          type: "category",
+          label: "Administration",
+          items: [
+            "minecraft-commands",
+            "minecraft-addop",
+            "minecraft-default-config",
+            "minecraft-server-icon",
+            "minecraft-add-own-world",
+            "minecraft-worlds",
+            "minecraftbedrock-behaviorresourcepacks",
+            "minecraft-rcon",
+            "minecraft-whitelist",
+            "minecraft-timings-report",
+            "minecraft-server-optimize"
+          ]
+        },
+        {
+          type: "category",
+          label: "Spigot & Bukkit",
+          items: [
+            "minecraft-pluginuploader"
+          ]
+        },
+        {
+          type: "category",
+          label: "Bungeecord",
+          items: [
+            "minecraft-bungeecord-config"
+          ]
+        },
+        {
+          type: "category",
+          label: "Forge & Fabric",
+          items: [
+            "minecraft-forge-fabric-add-mods-modpacks"
+          ]
+        }
+      ],
+    },
+    {
+      type: "category",
+      label: "SCP: Secret Laboratory",
+      items: [
+        {
+          type: "category",
+          label: "First Steps",
+          items: [
+            "scp-firststeps-connect"
+          ]
+        },		
+        "scp-becomeadmin",
+        "scp-newroles",
+        "scp-colored-servername",
+        "scp-pastebin",
+        {
+          type: "category",
+          label: "ServerMod",
+          items: [
+            "scpservermod-uploadplugins"
+          ]
+        },
+        {
+          type: "category",
+          label: "Exiled",
+          items: [
+            "exiled-plugins"
+          ]
+        }
+      ],
+    },
+    {
+      type: "category",
+      label: "Valheim",
+      items: [
+        "valheim-firststeps-connect",
+        "valheim-savegame",
+        "valheim-backup-schedule",
+        "valheim-serverlisting",
+        "valheim-admin",
+        "valheim-plus",
+        "valheim-plugins-bepinex"
+      ],
+    },
+    {
+      type: "category",
+      label: "ARK",
+      items: [
+        {
+          type: "category",
+          label: "First Steps",
+          items: [
+            "ark-firststeps-dashboard"
+          ]
+        },
+        "ark-becomeadmin",
+        "ark-mods",
+        "ark-serverlisting",
+        "ark-configuration",
+        "ark-savegame"
+      ],
+    },
+    {
+      type: 'html',
+      className: 'sidebar-title',
+      value: 'All Games',
       defaultStyle: true,
     },
     {
